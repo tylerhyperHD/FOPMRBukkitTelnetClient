@@ -440,6 +440,7 @@ public class BTC_MainPanel extends javax.swing.JFrame
         jLabel5 = new javax.swing.JLabel();
         saveplugin = new javax.swing.JButton();
         jSeparator2 = new javax.swing.JSeparator();
+        disableIdioticStuff1 = new javax.swing.JCheckBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("FreedomOpRemasteredTelnetClient");
@@ -936,15 +937,15 @@ public class BTC_MainPanel extends javax.swing.JFrame
 
         jTabbedPane2.addTab("Font Settings", jPanel6);
 
-        chkIgnorePlayerCommands.setFont(new java.awt.Font("Comic Sans MS", 0, 13)); // NOI18N
+        chkIgnorePlayerCommands.setFont(new java.awt.Font("Comic Sans MS", 0, 13));
         chkIgnorePlayerCommands.setSelected(true);
         chkIgnorePlayerCommands.setText("Ignore \"[PLAYER_COMMAND]\" messages");
 
-        chkIgnoreServerCommands.setFont(new java.awt.Font("Comic Sans MS", 0, 13)); // NOI18N
+        chkIgnoreServerCommands.setFont(new java.awt.Font("Comic Sans MS", 0, 13));
         chkIgnoreServerCommands.setSelected(true);
         chkIgnoreServerCommands.setText("Ignore \"issued server command\" messages");
 
-        chkShowChatOnly.setFont(new java.awt.Font("Comic Sans MS", 0, 13)); // NOI18N
+        chkShowChatOnly.setFont(new java.awt.Font("Comic Sans MS", 0, 13));
         chkShowChatOnly.setText("Show chat only");
         chkShowChatOnly.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -952,7 +953,7 @@ public class BTC_MainPanel extends javax.swing.JFrame
             }
         });
 
-        chkIgnoreErrors.setFont(new java.awt.Font("Comic Sans MS", 0, 13)); // NOI18N
+        chkIgnoreErrors.setFont(new java.awt.Font("Comic Sans MS", 0, 13));
         chkIgnoreErrors.setText("Ignore warnings and errors");
         chkIgnoreErrors.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -960,13 +961,23 @@ public class BTC_MainPanel extends javax.swing.JFrame
             }
         });
 
-        PluginName.setFont(new java.awt.Font("Comic Sans MS", 0, 13)); // NOI18N
+        PluginName.setFont(new java.awt.Font("Comic Sans MS", 0, 13));
 
-        jLabel5.setFont(new java.awt.Font("Comic Sans MS", 0, 13)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Comic Sans MS", 0, 13));
         jLabel5.setText("Plugin Name ~ Requires Restart");
 
-        saveplugin.setFont(new java.awt.Font("Comic Sans MS", 0, 13)); // NOI18N
+        saveplugin.setFont(new java.awt.Font("Comic Sans MS", 0, 13));
         saveplugin.setText("Save");
+
+        disableIdioticStuff1.setFont(new java.awt.Font("Comic Sans MS", 0, 13));
+        disableIdioticStuff1.setSelected(true);
+        disableIdioticStuff1.setActionCommand("Disable idiot addons ");
+        disableIdioticStuff1.setLabel("Disable idiotic addons");
+        disableIdioticStuff1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                disableIdioticStuff1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -986,7 +997,8 @@ public class BTC_MainPanel extends javax.swing.JFrame
                             .addComponent(chkShowChatOnly)
                             .addComponent(chkIgnoreErrors)
                             .addComponent(PluginName, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel5))
+                            .addComponent(jLabel5)
+                            .addComponent(disableIdioticStuff1))
                         .addGap(0, 333, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -1001,13 +1013,15 @@ public class BTC_MainPanel extends javax.swing.JFrame
                 .addComponent(chkShowChatOnly, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(chkIgnoreErrors, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(disableIdioticStuff1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PluginName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 203, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 174, Short.MAX_VALUE)
                 .addComponent(saveplugin)
                 .addContainerGap())
         );
@@ -1158,6 +1172,10 @@ public class BTC_MainPanel extends javax.swing.JFrame
     private void showAdminSayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_showAdminSayActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_showAdminSayActionPerformed
+
+    private void disableIdioticStuff1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_disableIdioticStuff1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_disableIdioticStuff1ActionPerformed
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JSpinner BB;
@@ -1182,6 +1200,7 @@ public class BTC_MainPanel extends javax.swing.JFrame
     private javax.swing.JCheckBox chkIgnorePlayerCommands;
     private javax.swing.JCheckBox chkIgnoreServerCommands;
     private javax.swing.JCheckBox chkShowChatOnly;
+    private javax.swing.JCheckBox disableIdioticStuff1;
     private javax.swing.JPanel favoriteButtonsPanel;
     private javax.swing.JPanel favoriteButtonsPanelHolder;
     private javax.swing.JScrollPane favoriteButtonsPanelScroll;
@@ -1268,6 +1287,11 @@ public class BTC_MainPanel extends javax.swing.JFrame
     public JCheckBox getChkIgnoreServerCommands()
     {
         return chkIgnoreServerCommands;
+    }
+    
+    public JCheckBox getdisableIdioticStuff1()
+    {
+        return disableIdioticStuff1;
     }
     
     public JCheckBox getChkShowChatOnly()

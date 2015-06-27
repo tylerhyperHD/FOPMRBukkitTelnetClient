@@ -63,13 +63,18 @@ public class BTC_TelnetMessage extends BTC_ConsoleMessage
                     && !isType(BTC_LogMessageType.SAY_MESSAGE)
                     && !isType(BTC_LogMessageType.ADMINSAY_MESSAGE);
         }
-
-        if (mainPanel.getChkIgnoreServerCommands().isSelected() && isType(BTC_LogMessageType.ISSUED_SERVER_COMMAND))
+        
+        if (mainPanel.getdisableIdioticStuff1().isSelected() && isType(BTC_LogMessageType.LARGEENTITIES))
         {
             return true;
         }
-        
-        if (isType(BTC_LogMessageType.LARGEENTITIES))
+
+        if (mainPanel.getdisableIdioticStuff1().isSelected() && isType(BTC_LogMessageType.CHECKSHADE))
+        {
+            return true;
+        }
+
+        if (mainPanel.getChkIgnoreServerCommands().isSelected() && isType(BTC_LogMessageType.ISSUED_SERVER_COMMAND))
         {
             return true;
         }
@@ -128,7 +133,7 @@ public class BTC_TelnetMessage extends BTC_ConsoleMessage
         //
         JOINEVENT(PATTERN_PREFIX + "UUID of player", Color.RED), // Future release API needed
         //
-        CHECKSHADE(PATTERN_PREFIX + "\\[me -> .+?\\] ", Color.GRAY),
+        CHECKSHADE(PATTERN_PREFIX + "\\[me -> .+?\\] "),
         //
         LOSTCONNECTION(PATTERN_PREFIX + ".+? left the game.", Color.RED),
         //
