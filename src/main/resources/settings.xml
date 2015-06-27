@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+    <playerCommands>
+        <playerCommand>
+            <name>Ban</name>
+            <format>ban %s %s</format>
+        </playerCommand>
+        <playerCommand>
+            <name>Toggle Mute</name>
+            <format>mute %s</format>
+        </playerCommand>
+        <playerCommand>
+            <name>Kick</name>
+            <format>tempban %s 10s %s</format>
+        </playerCommand>
+        <playerCommand>
+            <name>Tempban 5m</name>
+            <format>tempban %s 5m</format>
+        </playerCommand>
+        <playerCommand>
+            <name>Smite</name>
+            <format>smite %s %s</format>
+        </playerCommand>
+        <playerCommand>
+            <name>Op</name>
+            <format>op %s</format>
+        </playerCommand>
+        <playerCommand>
+            <name>Deop</name>
+            <format>deop %s</format>
+        </playerCommand>
+        <playerCommand>
+            <name>Toggle Freeze</name>
+            <format>fr %s</format>
+        </playerCommand>
+        <playerCommand>
+            <name>Doom</name>
+            <format>doom %s</format>
+        </playerCommand>
+        <playerCommand>
+            <name>Creative</name>
+            <format>creative %s</format>
+        </playerCommand>
+        <playerCommand>
+            <name>Survival</name>
+            <format>survival %s</format>
+        </playerCommand>
+    </playerCommands>
+    <favoriteButtons>
+        <favoriteButton>
+            <label>Op All</label>
+            <command>opall</command>
+        </favoriteButton>
+        <favoriteButton>
+            <label>Deop All</label>
+            <command>deopall</command>
+        </favoriteButton>
+        <favoriteButton>
+            <label>CL 1 Lockdown</label>
+            <command>lockdown 1</command>
+        </favoriteButton>
+        <favoriteButton>
+            <label>CL 0 Lockdown</label>
+            <command>lockdown 0</command>
+        </favoriteButton>
+        <favoriteButton>
+            <label>Cookie</label>
+            <command>cookie</command>
+        </favoriteButton>
+        <favoriteButton>
+            <label>Cake</label>
+            <command>cake</command>
+        </favoriteButton>
+        <favoriteButton>
+            <label>Remove Entities</label>
+            <command>rd</command>
+        </favoriteButton>
+        <favoriteButton>
+            <label>Kill All Mobs</label>
+            <command>killall all</command>
+        </favoriteButton>
+        <favoriteButton>
+            <label>Stop Server</label>
+            <command>stop</command>
+        </favoriteButton>
+    </favoriteButtons>
+</configuration>
